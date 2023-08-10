@@ -9,6 +9,7 @@ import {
 import languageCodes from "./languageCodes.jsx";
 
 export default function App() {
+  // Initialize States
   const [recording, setRecording] = useState(false);
   const [resultText, setResultText] = useState("");
   const [summaryText, setSummaryText] = useState("");
@@ -21,7 +22,7 @@ export default function App() {
 
   // Fallback for SpeechRecognition
   const SpeechRecognition =
-    window.SpeechRecognition || window.webkitSpeechRecognition;
+    window.SpeechRecognition || window.webkitSpeechRecognition; 
 
   useEffect(() => {
     return () => {
