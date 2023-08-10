@@ -119,6 +119,7 @@ export default function App() {
           "href",
           "data:text/plain;charset=utf-8," +
             encodeURIComponent("Transcription: " + resultText) +
+            encodeURIComponent("\n") +
             encodeURIComponent("Summary: " + summaryText)
         );
       } else {
